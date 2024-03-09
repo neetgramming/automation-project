@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Swag Labs Order Process - Parallel Tests">
+    <test name="UI Tests - Chrome">
+        <parameter name="browserName" value="chrome"/>
+        <groups>
+            <run>
+                <include name="parallel"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.UITest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="UI Tests - Firefox">
+        <parameter name="browserName" value="firefox"/>
+        <groups>
+            <run>
+                <include name="parallel"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.UITest">
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Swag Labs Order Process - Single Browser">
+    <test name="UI Test - Chrome">
+        <parameter name="browserName" value="chrome"/>
+        <groups>
+            <run>
+                <include name="single"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.UITest">
+            </class>
+        </classes>
+    </test>
+</suite>
