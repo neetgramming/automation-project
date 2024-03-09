@@ -1,6 +1,5 @@
 package com.neetgramming.data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Pet {

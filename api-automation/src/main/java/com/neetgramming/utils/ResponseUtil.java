@@ -25,11 +25,27 @@ public class ResponseUtil {
                 .put("/pet");
     }
 
+    public static Response getPetsByStatus(String status) {
+        return RestAssured.given()
+                .queryParam("status", status)
+                .get("/pet/findByStatus");
+    }
+
+    public static Response getPetsByTag(String tag) {
+        return RestAssured.given()
+                .queryParam("tags", tag)
+                .get("/pet/findByTags");
+    }
+
     public static int getResponseCode(Response response) {
         return response.getStatusCode();
     }
 
-    public static int getPetId(Response response, String path) {
+    public static Long getResponseData(Response response, String path) {
+        return response.then().extract().path(path);
+    }
+
+    public static String getStrResponseData(Response response, String path) {
         return response.then().extract().path(path);
     }
 

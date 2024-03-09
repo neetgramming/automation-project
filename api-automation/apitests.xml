@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pet Store API Test Suite">
+    <test name="API Test">
+        <classes>
+            <class name="tests.APITest">
+            </class>
+        </classes>
+    </test>
+</suite>
