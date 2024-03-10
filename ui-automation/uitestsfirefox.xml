@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Swag Labs Order Process - Single Browser">
+<suite name="Swag Labs Order Process - Firefox Browser">
     <test name="UI Test - Firefox">
         <parameter name="browserName" value="firefox"/>
         <groups>
