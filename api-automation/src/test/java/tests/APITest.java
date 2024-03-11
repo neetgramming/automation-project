@@ -87,7 +87,7 @@ public class APITest extends TestBase {
 
     @Test(priority = 3, testName = "GET-verifyGetPetsByTag")
     public void testGetPetsByTag() {
-        response = getPetsByStatus("string");
+        response = getPetsByTag("string");
         Assert.assertEquals(getResponseCode(response), 200, "Incorrect Response Code");
     }
 }
