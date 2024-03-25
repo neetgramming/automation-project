@@ -21,7 +21,7 @@ _***Note: Please copy and paste the commands on terminal if they don't work, by 
 #### Steps (Run the commands on IntelliJ terminal at the project location)
 1. Go to project path: `cd ui-automation`
 
-2.  Build the project: `mvn clean install -DskipTests`
+2.  Build the project: `mvn clean install -DskipTests=true`
 
 3. Run tests
    * Run on chrome: 
@@ -46,7 +46,7 @@ _***Note: Please copy and paste the commands on terminal if they don't work, by 
 #### Steps (Run the commands on IntelliJ terminal at the project location)
 1.  Go to project path: `cd api-automation`
 
-2. Build the project: `mvn clean install -DskipTests`
+2. Build the project: `mvn clean install -DskipTests=true`
 
 3. Run tests: `mvn test -DsuiteXmlFile=apitests.xml`
 
